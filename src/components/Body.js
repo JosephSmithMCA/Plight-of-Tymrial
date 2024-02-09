@@ -13,21 +13,9 @@ function Body(){
 
 function InitiativeOrder(){
 
-    const [countRound, setCountRound] = React.useState(1)
-
-    function addRound(){
-        setCountRound(prevCountRound => prevCountRound + 1)
-    }
-
-    function resetRound(){
-        setCountRound(prevCountRound => prevCountRound = 1)
-    }
-    
     return(
         <div className="col-sm-4">
-            <div className="col-sm-12 text-center">
-                <h1 onClick={addRound}>Round {countRound}</h1>
-            </div>
+            
         </div>
     )
 }
