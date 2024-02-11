@@ -1,4 +1,5 @@
 import React from "react";
+import ConditionsRow from "./ConditionsRow";
 
 function Body(){
 
@@ -6,7 +7,7 @@ function Body(){
         <div className="row">
             <InitiativeOrder/>
             <Stats/>
-            <MagicalEffects/>
+            <Conditions/>
         </div>
     )
 }
@@ -29,13 +30,13 @@ function Stats(){
     )
 }
 
-function MagicalEffects(){
+function Conditions(){
 
     return(
         <div className="col-sm-4 text-center">
-            <h1>Magical Effects</h1>
+            <h2>Conditions</h2>
             <div className="col-sm-12">
-                <p>akijnacjnn</p>
+                <ConditionsRow/>
             </div>
         </div>
     )

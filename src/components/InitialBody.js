@@ -14,7 +14,7 @@ function InitialInitiativeDetails(){
 
     return(
         <div className="col-sm-12">
-            <h4>Enter Character's Name: </h4>
+            <h5>Enter Character's Name: </h5>
         </div>
     )
 }

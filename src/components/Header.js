@@ -14,7 +14,7 @@ function Header(){
     
     return(
             <div className="col-sm-12 text-center Header">
-                <h1 onClick={addRound}>Round {countRound}</h1>
+                <h2 onClick={addRound}>Round {countRound}</h2>
             </div>
     )
 }
