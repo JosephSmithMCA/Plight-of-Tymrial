@@ -23,7 +23,7 @@ function InitiativeOrder(){
 function Stats(){
 
     return(
-        <div className="col-sm-4">
+        <div className="col-sm-4 text-center">
             <input type="text" />
         </div>
     )
@@ -32,7 +32,7 @@ function Stats(){
 function MagicalEffects(){
 
     return(
-        <div className="col-sm-4">
+        <div className="col-sm-4 text-center">
             <h1>Magical Effects</h1>
             <div className="col-sm-12">
                 <p>akijnacjnn</p>

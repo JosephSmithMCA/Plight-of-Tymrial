@@ -1,4 +1,5 @@
 import react from "react";
+import InitialHeader from "./components/InitialHeader";
 import Header from "./components/Header";
 import InitialBody from "./components/InitialBody";
 import Body from "./components/Body";
@@ -8,6 +9,7 @@ function App(){
 
     return(
         <div className="row">
+            <InitialHeader/>
             <InitialBody/>
             <Header/>
             <Body/>
