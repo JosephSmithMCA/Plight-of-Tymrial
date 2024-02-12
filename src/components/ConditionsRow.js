@@ -1,7 +1,7 @@
 import ConditionsData from "./ConditionsData";
 
 function ConditionItems(condition){
-    console.log(condition)
+    // console.log(condition)
     return(
         <div className="row">
             <div className="col-sm-12">
@@ -13,9 +13,14 @@ function ConditionItems(condition){
                 <div className="row">
                     <div className="col-sm-12">
                         <p>{condition.conditionDescription}</p>
-                        <ul>
-                            <li>{condition.conditionLevelEffects}</li>
-                        </ul>
+                        {/* <ul>
+                            <li>{condition.conditionLevelEffects[0]}</li>
+                            <li>{condition.conditionLevelEffects[1]}</li>
+                            <li>{condition.conditionLevelEffects[2]}</li>
+                            <li>{condition.conditionLevelEffects[3]}</li>
+                            <li>{condition.conditionLevelEffects[4]}</li>
+                            <li>{condition.conditionLevelEffects[5]}</li>
+                        </ul> */}
                     </div>
                 </div>
             </div>
@@ -24,14 +29,14 @@ function ConditionItems(condition){
 }
 
 function ConditionsRow(){
-    let exhaustedEffects = ConditionsData.levelEffect.map(
-        (currentExhaustion) => {
-            return <ConditionItems
-                exhaustionLevel={currentExhaustion.levelEffect.level}
-                exhaustionEffect={currentExhaustion.levelEffect.effect}
-            />
-        }
-    )
+    // let exhaustedEffects = ConditionsData.levelEffect.map(
+    //     (currentExhaustion) => {
+    //         return <ConditionItems
+    //             exhaustionLevel={currentExhaustion.levelEffect.level}
+    //             exhaustionEffect={currentExhaustion.levelEffect.effect}
+    //         />
+    //     }
+    // )
 
     let mappedConditions = ConditionsData.map(
         (currentConditionItem) => {
@@ -39,9 +44,10 @@ function ConditionsRow(){
                 conditionNames={currentConditionItem.conditionName}
                 conditionDescription={currentConditionItem.description}
                 conditionLevelEffects={currentConditionItem.levelEffect}
-            />
-        }
-    )
+                />
+            }
+            )
+            
 
     return(
         <div className="row">

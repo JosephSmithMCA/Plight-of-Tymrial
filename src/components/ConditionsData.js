@@ -39,7 +39,7 @@ export default[
                 level:"6",
                 effect:"Death"
             },
-        ]
+        ],
     },
     {
         conditionName: "Frightened",

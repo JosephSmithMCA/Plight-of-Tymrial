@@ -13,8 +13,24 @@ function InitialBody(){
 function InitialInitiativeDetails(){
 
     return(
-        <div className="col-sm-12">
-            <h5>Enter Character's Name: </h5>
+        <div className="col-sm-12 InitialInitiativeDetail">
+            <div className="row">
+                <div className="col-sm-4">
+                    <h5>Enter Character's Name: </h5>
+                </div>
+                <div className="col-sm-3">
+                    <input type="text" />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function InitialStats(){
+
+    return(
+        <div className="col-sm-4 text-center">
+            <input type="text" />
         </div>
     )
 }
