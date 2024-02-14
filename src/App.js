@@ -11,8 +11,8 @@ function App(){
         <div className="row">
             <InitialHeader/>
             <InitialBody/>
-            {/* <Header/> */}
-            {/* <Body/> */}
+            <Header/>
+            <Body/>
         </div>
     )
 }

@@ -34,7 +34,7 @@ function Conditions(){
 
     return(
         <div className="col-sm-4 text-center">
-            <h2>Conditions</h2>
+            <h2 className="text-decoration-underline">Conditions</h2>
             <div className="col-sm-12">
                 <ConditionsRow/>
             </div>

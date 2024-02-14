@@ -13,18 +13,20 @@ function ConditionItems(condition){
                 <div className="row">
                     <div className="col-sm-12">
                         <p>{condition.conditionDescription}</p>
-                        {/* <ul>
-                            <li>{condition.conditionLevelEffects[0]}</li>
-                            <li>{condition.conditionLevelEffects[1]}</li>
-                            <li>{condition.conditionLevelEffects[2]}</li>
-                            <li>{condition.conditionLevelEffects[3]}</li>
-                            <li>{condition.conditionLevelEffects[4]}</li>
-                            <li>{condition.conditionLevelEffects[5]}</li>
-                        </ul> */}
+                        <ul>{condition.conditionLevelEffects}</ul>
                     </div>
                 </div>
             </div>
         </div>
+    )
+}
+
+function X(props){
+
+    return(
+        <li>
+            <b>{props.level}</b> {props.effect}
+        </li>
     )
 }
 
@@ -39,11 +41,24 @@ function ConditionsRow(){
     // )
 
     let mappedConditions = ConditionsData.map(
-        (currentConditionItem) => {
+        (currentConditionItem) => { 
+            let exhaustion;
+            if(currentConditionItem.conditionName === "Exhaustion"){
+
+                 exhaustion = currentConditionItem.levelEffect.map(
+                    (exhaust) => {
+                        return <X 
+                            level={exhaust.level}
+                            effect = {exhaust.effect}
+                        />
+                    }
+                )
+            }
+            console.log(currentConditionItem.levelEffect)
             return <ConditionItems
                 conditionNames={currentConditionItem.conditionName}
                 conditionDescription={currentConditionItem.description}
-                conditionLevelEffects={currentConditionItem.levelEffect}
+                conditionLevelEffects={exhaustion}
                 />
             }
             )

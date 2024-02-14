@@ -21,6 +21,9 @@ function InitialInitiativeDetails(){
                 <div className="col-sm-3">
                     <input type="text" />
                 </div>
+                <div className="col-sm-1">
+                    <button className="rounded">Enter</button>
+                </div>
             </div>
         </div>
     )
