@@ -12,6 +12,11 @@ function InitialBody(){
 
 function InitialInitiativeDetails(){
 
+
+    function InitialStats(){
+        
+    }
+
     return(
         <div className="col-sm-12 InitialInitiativeDetail">
             <div className="row">
@@ -29,13 +34,5 @@ function InitialInitiativeDetails(){
     )
 }
 
-function InitialStats(){
-
-    return(
-        <div className="col-sm-4 text-center">
-            <input type="text" />
-        </div>
-    )
-}
 
 export default InitialBody
