@@ -21,7 +21,7 @@ function ConditionItems(condition){
     )
 }
 
-function X(props){
+function ExhaustFx(props){
 
     return(
         <li>
@@ -47,7 +47,7 @@ function ConditionsRow(){
 
                  exhaustion = currentConditionItem.levelEffect.map(
                     (exhaust) => {
-                        return <X 
+                        return <ExhaustFx 
                             level={exhaust.level}
                             effect = {exhaust.effect}
                         />
@@ -59,9 +59,9 @@ function ConditionsRow(){
                 conditionNames={currentConditionItem.conditionName}
                 conditionDescription={currentConditionItem.description}
                 conditionLevelEffects={exhaustion}
-                />
-            }
-            )
+            />
+        }
+    )
             
 
     return(
